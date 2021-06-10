@@ -1,0 +1,174 @@
+<div class="row">
+
+  <div class="col-md-4">
+
+    <nb-card (click)="openDialog(dialogDisclaimer)" style="cursor: pointer;">
+      <nb-card-body style="height: 3.75rem; padding: 1.25rem; font-family: Roboto; font-size: 15px; font-weight: 300;overflow: auto;">
+        Disclaimer (You must read this)
+      </nb-card-body>
+    </nb-card>
+
+    
+
+    <!-- Credits -->
+    <div style="height: 20px;"></div>
+    <nb-accordion multi>
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Contributor 
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+
+          <div class="contact">
+            <div class="info-container">
+              <div class="user-name ng-star-inserted">Rajkumar-Kumawat</div> 
+              <div class="user-title ng-star-inserted">
+                  Analysis, design, and revision <br>
+              </div>
+              <div style="font-size: 0.7rem; margin-top: 5px;">
+                  <a href="https://twitter.com/Rjkumar_kumawat">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-twitter fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+                  <a href="https://github.com/Rajkumar-kumawat">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-gitlab fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+                  <a href="https://github.com/Rajkumar-kumawat">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-github fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+                  <a href="https://www.instagram.com/rjkumar0205">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-instagram fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/rajkumar-kumawat-66072b199/">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-linkedin fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+                  <a href="mailto:rajtocontact0@gmail.com">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-envelope fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+              </div>
+            </div>
+          </div>
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+
+     
+
+    <!-- Friends -->
+    <div style="height: 20px;"></div>
+    <nb-accordion multi>
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Teacher 
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+              who encouraged me <br>&nbsp;
+
+          <div class="contact">
+            <div class="info-container">
+              <div class="user-name ng-star-inserted">Colonel Inderjeet Singh</div> 
+              <div class="user-title ng-star-inserted">
+                   Information Systems Professional, solution architect, program/ project manager
+                  <br>
+              </div>
+              <div style="font-size: 0.7rem; margin-top: 5px;">
+                  <a href="https://twitter.com/inderbarara">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-twitter fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/inderbarara">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-linkedin fa-stack-1x" style="color: #333;"></i> 
+                    </span>
+                  </a>
+              </div>
+            </div>
+          </div>
+          
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+
+  </div>
+
+  <!-- Logo -->
+  <div class="col-md-4">
+    <nb-card size="large" class="border-default" id="imagePrincipal">
+      <nb-card-body style="text-align: center;"> 
+        <div style="height: 100%; vertical-align: middle;">
+          <img style="position:absolute; top:0; bottom:0; left:0; right: 0; margin:auto;" src="assets/images/iKy-Logo.png">
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-md-4">
+    <nb-card size="small" class="border-default">
+      <nb-card-body style="overflow: hidden; margin: 0px; padding: 0px;"> 
+        <div #nbCardGitlabCode id="nbCardGitlabCode" style="overflow: hidden; margin: 0px; padding: 0px;">
+          <ngx-charts-pie-chart
+            [view]="[width, height]"
+            [doughnut]="false"
+            [scheme]="colorScheme"
+            [results]="gitlabCode"
+            [labels]="true">
+          </ngx-charts-pie-chart>
+        </div>
+        
+      </nb-card-body>
+    </nb-card>
+
+    
+  </div>
+
+</div>
+
+<ng-template #dialogDisclaimer let-data let-ref="dialogRef">
+    <nb-card style="height: 600px; width: 700px; background-color: rgba(0, 0, 0, 0.8); padding: 0px;">
+      <nb-card-header>DISCLAIMER</nb-card-header>
+      <nb-card-body style="overflow: auto; padding: 0px;">
+          <div style="padding: 1.25rem; text-align: justify; font-family: Exo; font-size: 1rem; font-weight: 300;">
+Anyone who contributes or contributed to the project, Most Welcome in Swami-G world.
+          </div>
+
+          <div style="padding: 1.25rem; padding-top:0px; text-align: justify; font-family: Exo; font-size: 1rem; font-weight: 300;">
+Keep in mind that this software was Combine of lots of Tool , I Did not code much inside , In this Tool ,I have combine a lot of OSINT Research tools which are available on internet too. then for educational purposes , and now the goal is to collaborate with the me and  making quality free software, and while the quality is not excellent (sometimes it's not even good) we strive to pursue excellence.
+          </div>
+
+          <div style="padding: 1.25rem; padding-top:0px; text-align: justify; font-family: Exo; font-size: 1rem; font-weight: 300;">
+Consider that all the information collected is free and available online, the tool only tries to discover, collect and display it.
+Many times the tool cannot even achieve its goal of discovery and collection. Please load the necessary APIs
+          </div>
+
+          <div style="padding: 1.25rem; padding-top:0px; text-align: justify; font-family: Exo; font-size: 1rem; font-weight: 300;">
+Do not use the tool if you cannot read the instructions and / or this disclaimer clearly.
+          </div>
+
+           
+          <div style="padding: 1.25rem; padding-top:0px; text-align: justify; font-family: Exo; font-size: 1rem; font-weight: 300;">
+Rajkumar-Kumawat
+          </div>
+      </nb-card-body>
+    </nb-card>
+</ng-template>
